@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+:root {
+  --Tomato: hsl(4, 100%, 67%);
+  --DarkSlateGrey: hsl(234, 29%, 20%);
+  --CharcoalGrey: hsl(235, 18%, 26%);
+  --Grey: hsl(231, 7%, 60%);
+  --White: hsl(0, 0%, 100%);
+}
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--DarkSlateGrey);
+}
+main {
+  width: 50rem;
+  height: 32rem;
+  display: grid;
+  grid-template-columns: 55% 45%;
+  grid-template-rows: 100%;
+  border-radius: 1rem;
+  overflow: hidden;
+  background: var(--White);
+}
+.left-wrapper {
+  padding: 4rem 3rem;
+}
+.lists div{
+    display: flex;
+    align-items: center;
+    column-gap: .5rem;
+}
+.lists {
+    display: flex;
+    flex-direction: column;
+    row-gap: .8rem;
+    margin: 1.5rem 0;
+}
+.lists div img{
+    width: 15px;
+}
+h1 {
+    color: var(--DarkSlateGrey);
+    font-weight: 600;
+    font-size: 2.8rem;
+}
+p{
+    color: var(--CharcoalGrey);
+    padding: .8rem 0;
+    padding-bottom: 0;
+    line-height: 1.4rem;
+}
+h4{
+    color: var(--CharcoalGrey);
+    font-weight: 300;
+}
+label{
+    color: var(--DarkSlateGrey);
+    font-weight: 600;
+    position: relative;
+}
+h6{
+    position: absolute;
+    top: 0;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--Tomato);
+    display: none;
+    right: 0;
+}
+.right-wrapper {
+  padding: 0.7rem 0rem;
+}
+.right-wrapper img {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    row-gap: .8rem;
+}
+input{
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid var(--Grey);
+    border-radius: 5px;
+    color: var(--Grey);
+    margin: .8rem 0;
+    cursor: pointer;
+    
+}
+button{
+    padding: .8rem;
+    background: var(--DarkSlateGrey);
+    color: var(--White);
+    border-radius: 5px;
+    border: none;
+    &:hover{
+        background: var(--Tomato);
+        transition: 0.5s;
+        cursor: pointer;
+    }
+}
+
+#sucess-wrapper{
+    width: 25rem;
+    border-radius: 1rem;
+    background: var(--White);
+    height: 23rem;
+    display: none;
+}
